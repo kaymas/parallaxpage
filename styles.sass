@@ -1,0 +1,100 @@
+html
+  font-size: 10px
+
+body
+  color: #777
+  margin: 0
+  padding: 0
+  font-size: 1.6rem
+body::-webkit-scrollbar
+  width: 0rem
+
+h1
+  color: #333
+  font-weight: 400
+  font-size: 5.4rem
+
+.content
+  article
+    padding: 10px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+//parallax
+
+.back_container
+  width: 100%
+  margin: 0 auto
+
+header
+  height: 100vh
+  width: 100%
+  margin: 0 auto
+  background-color: #fff
+  background-image: url('header_back.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: bottom
+  background-attachment: scroll
+  transition: all 0.5s ease-in-out
+
+.clothes-pics
+  display: flex
+  flex-direction: column
+  margin-top: 50px
+  margin-bottom: 50px
+  img
+    max-width: 30%
+    position: relative
+    opacity: 0
+    transform: translateY(-20px)
+    transition: all 0.3s ease-in-out
+
+    &.is-showing
+      opacity: 1
+      transform: translateY(0px)
+
+
+.blogs
+  margin-top: 100px
+
+  .flying_elements
+    margin-top: 50px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .blogpost
+      max-width: 150px
+      border: 1px solid #777
+      padding: 10px
+      padding-bottom: 40px
+      border-radius: 2px
+      background-color: #fff
+      // transition: all 0.3s ease-in-out
+
+      img
+        width: 100%
+        border-radius: 2px
+      p
+        margin-bottom: 20px
+      a
+        text-decoration: none
+        color: #777
+        border: 1px solid #777
+        padding: 10px
+
+        &:hover
+          color: #fff
+          background-color: #777
+
+
+    .blog-2
+      z-index: 2
+
+    .blog-1
+      transform: translate(120px,50px)
+
+    .blog-3
+      transform: translate(-120px,50px)
